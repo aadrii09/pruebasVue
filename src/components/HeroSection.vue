@@ -1,12 +1,18 @@
-.castrobeiro\Desktop\vue\learnvue\src\components\HeroSection.vue
 <template>
-  <section class="w-full py-16 px-6 text-center text-white">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Descubre el mundo del gaming</h1>
-    <p class="text-xl mb-8 max-w-2xl mx-auto">
-      Encuentra los mejores periféricos y accesorios para mejorar tu experiencia de juego.
-    </p>
-    <button class="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-full font-bold transition">
-      Explorar ahora
-    </button>
+  <section class="relative w-full h-[300px] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <img 
+        src="https://i.imgur.com/JTLEtSr.png" 
+        alt="PlayStation Controller" 
+        class="w-full max-w-2xl object-contain"
+      />
+    </div>
+    <div class="absolute bottom-8 left-0 w-full text-center">
+      <h1 class="text-5xl font-bold text-white tracking-wider">PLAY STATION</h1>
+    </div>
   </section>
 </template>
+
+<script setup lang="ts">
+// No additional logic needed
+</script>

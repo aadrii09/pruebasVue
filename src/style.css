@@ -7,3 +7,58 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Animaciones */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Efectos hover */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Animación para el carrito */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.cart-animation {
+  animation: bounce 0.5s;
+}
+
+/* Transiciones */
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-enter-from, .slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+/* Estilos para modo oscuro */
+.dark .dark-text {
+  color: #f3f4f6;
+}
+.dark .dark-bg {
+  background-color: #1f2937;
+}
+.dark .dark-card {
+  background-color: #374151;
+}
